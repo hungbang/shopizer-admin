@@ -126,7 +126,7 @@ pipeline {
 
         always {
             echo 'Deleting workspace...'
-            // deleteDir()
+            deleteDir()
             echo 'Workspace deleted.'
         }
     }
