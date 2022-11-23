@@ -8,8 +8,8 @@ export const environment = {
     //MARKETPLACE | BTB | STANDARD
     mode: 'STANDARD',
     //API URL
-    apiUrl: window["env"]["APP_BASE_URL"] || 'https://niche.evizi.com/services',
-    shippingApi: window["env"]["APP_SHIPPING_URL"] || 'https://niche.evizi.com/services',
+    apiUrl: window["env"]["APP_BASE_URL"] || 'https://niche.evizi.com/services/api',
+    shippingApi: window["env"]["APP_SHIPPING_URL"] || 'https://niche.evizi.com/services/api',
     client: {
         language: {
             default: window["env"]["APP_DEFAULT_LANGUAGE"] || 'en',
