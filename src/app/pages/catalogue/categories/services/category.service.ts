@@ -35,11 +35,13 @@ export class CategoryService {
   }
 
   addCategory(category): Observable<any> {
-    return this.crudService.post(`/v1/private/category`, category);
+    const action = '/v1/private/category' + '?store=' + category.store + '&lang=' + category.selectedLanguage;
+    return this.crudService.post(action, category);
   }
 
   updateCategory(id, category): Observable<any> {
-    return this.crudService.put(`/v1/private/category/${id}`, category);
+    const action = `/v1/private/category/${id}` + '?store=' + category.store + '&lang=' + category.selectedLanguage;
+    return this.crudService.put(action, category);
   }
 
   updateCategoryVisibility(category): Observable<any> {
